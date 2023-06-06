@@ -15,7 +15,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: unset; // Remove the negative z-index value
+  z-index: unset; 
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -45,7 +45,7 @@
 
   .hero-cta {
     display: flex;
-    align-items: center; /* Add this property */
+    align-items: center; 
 
     @include respond(tab-port) {
       justify-content: center;
@@ -62,7 +62,7 @@
 
   .social-links-hero {
     display: flex;
-    align-items: center; /* Add this property */
+    align-items: center; 
   }
 
   .social-links-hero a {
@@ -71,18 +71,20 @@
     height: 5rem;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1rem; /* Adjust the margin to decrease the space between the icons */
+    margin-left: .1rem;
+    padding-left: 2rem;
     font-size: 3rem;
     transition: all 0.2s ease-in;
     display: flex;
   }
 }
 
+
 .tech-skills-hero {
   display: flex;
   align-items: center;
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 10rem;
   font-family: 'Oswald', sans-serif;
   letter-spacing: .3rem;
 }
