@@ -30,6 +30,13 @@ export const targetElements = [
     },
   },
   {
+    element: ".tech-skills-hero",
+    animation: {
+      delay: 1000,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    }
+  },
+  {
     element: ".about-wrapper__image",
     animation: {
       delay: 600,
