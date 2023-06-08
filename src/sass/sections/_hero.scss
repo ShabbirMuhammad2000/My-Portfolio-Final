@@ -49,6 +49,14 @@
     @media (max-width: 480px) {
       font-size: 2.2rem;
     }
+
+    @media (max-width: 380px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 1.2rem;
+    }
   }
 
   .hero-cta {
@@ -64,6 +72,11 @@
 
       @include respond(phone) {
         font-size: 2rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.0rem;
       }
     }
   }
@@ -95,34 +108,85 @@
       font-size: 2rem;
     }
   }
+
+  .tech-skills-hero {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 10rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .3rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  
+  .tech-skills-hero p {
+    display: flex;
+    margin-left: 3rem;
+    font-size: 2rem;
+    align-items: center;
+    display: inline-block;
+    margin-top: .6rem;
+  }
+  
+  .icon {
+    font-size: 5rem; 
+    margin-right: 4rem;
+
+
+    @media (max-width: 800px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 3rem;
+    }
+    
+  }
+  .icon-first{
+    font-size: 5rem;
+    margin-right: 4rem;
+    margin-left: 4rem; 
+
+
+    @media (max-width: 800px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 3rem;
+    }
+  }
+  
 }
 
 
-.tech-skills-hero {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  margin-top: 10rem;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: .3rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
+// .tech-skills-hero {
+//   display: flex;
+//   align-items: center;
+//   text-align: left;
+//   margin-top: 10rem;
+//   font-family: 'Oswald', sans-serif;
+//   letter-spacing: .3rem;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+// }
 
 
-.tech-skills-hero p {
-  display: flex;
-  margin-left: 3rem;
-  font-size: 2rem;
-  align-items: center;
-  display: inline-block;
-  margin-top: .6rem;
-}
+// .tech-skills-hero p {
+//   display: flex;
+//   margin-left: 3rem;
+//   font-size: 2rem;
+//   align-items: center;
+//   display: inline-block;
+//   margin-top: .6rem;
+// }
 
-.tech-skills-hero i {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-}
+// .tech-skills-hero i {
+//   margin-right: 2rem;
+//   margin-bottom: 2rem;
+// }
 
 /* Media Query for Small Screens */
 // @media (max-width: 800px) {
@@ -152,28 +216,3 @@
 // }
 
 
-/* Media Query for Galaxy Fold */
-@media (max-width: 280px) and (max-height: 653px) {
-  #hero {
-    padding: 0rem 2rem;
-  }
-
-  .hero-title {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .social-links-hero a {
-    font-size: 2.2rem;
-  }
-
-  .tech-skills-hero {
-    margin-top: 5rem;
-  }
-
-  .tech-skills-hero i {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-}
