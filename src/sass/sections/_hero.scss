@@ -41,6 +41,14 @@
     @include respond(phone-xs) {
       font-size: 2.8rem;
     }
+
+    @media (max-width: 800px) {
+      font-size: 3rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 2.2rem;
+    }
   }
 
   .hero-cta {
@@ -63,6 +71,8 @@
   .social-links-hero {
     display: flex;
     align-items: center; 
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .social-links-hero a {
@@ -76,6 +86,14 @@
     font-size: 3rem;
     transition: all 0.2s ease-in;
     display: flex;
+
+    @media (max-width: 800px) {
+      font-size: 2.4rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -87,7 +105,11 @@
   margin-top: 10rem;
   font-family: 'Oswald', sans-serif;
   letter-spacing: .3rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
+
 .tech-skills-hero p {
   display: flex;
   margin-left: 3rem;
@@ -95,4 +117,63 @@
   align-items: center;
   display: inline-block;
   margin-top: .6rem;
+}
+
+.tech-skills-hero i {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Media Query for Small Screens */
+// @media (max-width: 800px) {
+//   #hero {
+//     padding: 0rem 2rem;
+//   }
+
+//   .tech-skills-hero {
+//     margin-top: 5rem;
+//   }
+
+//   .tech-skills-hero i {
+//     margin-right: 1rem;
+//     margin-bottom: 1rem;
+//     font-size: 2rem;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .hero-title {
+//     font-size: 1.8rem;
+//   }
+
+//   .social-links-hero a {
+//     font-size: 1.2rem;
+//   }
+// }
+
+
+/* Media Query for Galaxy Fold */
+@media (max-width: 280px) and (max-height: 653px) {
+  #hero {
+    padding: 0rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .social-links-hero a {
+    font-size: 2.2rem;
+  }
+
+  .tech-skills-hero {
+    margin-top: 5rem;
+  }
+
+  .tech-skills-hero i {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
 }
